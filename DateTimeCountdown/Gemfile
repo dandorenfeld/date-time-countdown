@@ -25,3 +25,15 @@ gem 'pg'
 
 # To use debugger
 # gem 'debugger'
+
+group :development do
+  gem 'pry-rails'
+  gem 'pry-debugger'
+  gem 'pry-doc'
+  gem 'meta_request'
+end
+
+gem 'bcrypt-ruby', '~> 3.0.0'
+
+gem 'pony'
+
