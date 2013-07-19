@@ -1,0 +1,31 @@
+<!-- Display total days, work time, and current date/time -->
+<h3>
+<div style="margin-top:5%;">
+<div style="background-color:white;"><br/><br/></div>
+<div style="background-color:white;">&emsp;&emsp;&emsp;You have
+  <font color="red">   <%= @days_gross %> </font> calendar days left
+</div>
+<div style="background-color:white;"><br/><br/></div>
+</h3>
+
+<h3>
+<div style="margin-top:8%;">
+<div style="background-color:white;"><br/><br/></div>
+<div style="background-color:white;">&emsp;&emsp;&emsp;You have
+  <font color="red">   <%= pluralize(@days_left, 'day')       %></font>,
+  <font color="blue">  <%= pluralize(@hours_left, 'hour')     %></font>,
+  <font color="green"> <%= pluralize(@minutes_left, 'minute') %></font>, and
+  <font color="orange"><%= pluralize(@seconds_left, 'second') %></font>
+    of work time left!!!
+</div>
+<div style="background-color:white;"><br/><br/></div>
+</h3>
+
+<h3>
+<div style="margin-top:8%;">
+<div style="background-color:white;"><br/><br/></div>
+<div style="background-color:white;">&emsp;&emsp;&emsp;Current date and time:
+  <font color="red"> <%= @time_now_formatted %></font>
+</div>
+<div style="background-color:white;"><br/><br/></div>
+</h3>
