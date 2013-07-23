@@ -16,7 +16,7 @@ class CountdownController < ApplicationController
       @days_left = @days_gross - (@days_gross / 7 * 2)
       @days_left = @days_left - 10
 
-      # Calculate the the partial day
+      # Calculate the partial day
       time_now = Time.now.in_time_zone("Mountain Time (US & Canada)")
       @time_now_formatted = time_now.strftime("%A - %B %d, %Y; %I:%M%p %Z")
       @hours_left         = 0
